@@ -54,7 +54,7 @@ xpcall(function()
             local id = ...
 
             if not id then
-                return local_player:Kick('Please Rejoin/Retry!')
+                return game:GetService('Players').LocalPlayer:Kick('Please Rejoin/Retry!')
             end
 
             local replicated_storage = cloneref(game:GetService('ReplicatedStorage'))
